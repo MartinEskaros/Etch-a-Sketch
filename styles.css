@@ -3,29 +3,65 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(225, 209, 171);
+    background-color: rgb(252, 160, 0);
 }
 h1{
     text-align: center;
     font-family: 'Lobster', cursive;
-    font-size: 100px;
+    font-size: 150px;
+    color: aliceblue;
+    
 }
+
+.vert-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.clear {
+    font-family: 'Lilita One', cursive;
+    margin-top: 90px;
+    width: 250px;
+    height: 100px;   /* Adjusted for a more typical button height */
+    background-color: rgb(52, 100, 232);
+    color: aliceblue;
+    border: none;
+    border-radius: 90px;
+    cursor: pointer;
+    font-size: 36px;  /* Optional: make the text a bit larger */
+    transition: background-color 0.3s;  /* Optional: for a hover effect */
+}
+
+.clear:hover {
+    background-color: rgb(164, 212, 238);  
+}
+
+
 
 
 #container{
     display: grid;
     grid-template-columns: repeat(32,1fr);
-    grid-gap:2px;
+    grid-gap:1px;
     width: 1000px;
     height: 1000px;
     align-items: center;
     justify-content: center;
-    
 }
 
+.board-container {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
+    border: 70px solid rgb(52, 100, 232);
+    width: 1000px;
+    height: 1000px;
+    border-radius: 40px;
+ 
+}
 .grid-item{
-    width: 35px;
-    height: 35px;
+    width: 28px;
+    height: 28px;
     background-color: rgb(255, 255, 255);
 }
 
