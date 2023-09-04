@@ -14,3 +14,13 @@ gridItems.forEach(item => {
         item.classList.add('grid-item-passed');
     });
 });
+
+//clear board
+
+const clearButton = document.querySelector('.clear');
+clearButton.addEventListener('click', function(){
+    const gridItems = document.querySelectorAll('.grid-item-passed');
+    gridItems.forEach(item => {
+        item.classList.remove('grid-item-passed');
+    });
+});
