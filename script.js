@@ -11,6 +11,6 @@ const gridItems = document.querySelectorAll('.grid-item');
 
 gridItems.forEach(item => {
     item.addEventListener('mouseover', () => {
-        item.style.backgroundColor = 'rgb(0, 0, 0)';
+        item.classList.add('grid-item-passed');
     });
 });
