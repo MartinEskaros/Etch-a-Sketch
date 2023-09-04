@@ -1,0 +1,31 @@
+body {
+    margin: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(225, 209, 171);
+}
+h1{
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    font-size: 100px;
+}
+
+
+#container{
+    display: grid;
+    grid-template-columns: repeat(32,1fr);
+    grid-gap:2px;
+    width: 1000px;
+    height: 1000px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.grid-item{
+    width: 35px;
+    height: 35px;
+    background-color: rgb(255, 255, 255);
+}
+
